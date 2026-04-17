@@ -1,0 +1,131 @@
+
+:root {
+  --bg: #f4f6f8;
+  --texto: #222;
+  --primary: #e74c3c;
+  --card: #ffffff;
+}
+
+body.dark {
+  --bg: #121212;
+  --texto: #f1f1f1;
+  --card: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--texto);
+}
+
+/* MENU */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #222;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+nav button {
+  margin-left: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* ESPAÇO POR CAUSA DO MENU */
+main {
+  padding-top: 50px;
+}
+
+/* SEÇÕES */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* TÍTULOS */
+h1, h2 {
+  color: var(--primary);
+}
+
+/* CARDS */
+.card {
+  background: var(--card);
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/*FORMATAÇÃO PARA LINKS DO PORTFOLIO */
+.card a{
+  text-decoration: none;
+  color: blue;
+}
+
+.card a:hover{
+  color: var(--primary);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PORTFOLIO GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/*FORMATAÇÃO IMAGEM*/
+
+img{
+  width: 100px;
+  float: right;
+  transform: translateY(-50px);
+}
+
+/* FORM */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+}

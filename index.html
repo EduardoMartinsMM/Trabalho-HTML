@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carlos Eduardo Martins Mendes</title>
+</head>
+
+  <link rel="stylesheet" href="style.css">
+<body>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#formacao">Formação</a>
+  <a href="#portfolio">Portfólio</a>
+  <a href="#contato">Contato</a>
+  <button onclick="toggleTema()">🌙</button>
+</nav>
+
+<main>
+
+<section id="sobre">
+  <h1>Carlos Eduardo Martins Mendes</h1>
+  <div class="card"><strong>👨‍💼	Sobre:</strong> Sou estudante de Ciência de Dados e atuo como Analista de BI Júnior. 
+      Tenho interesse em continuar na área de análise de dados, buscando 
+      criar soluções práticas e eficientes.</p>
+
+      <p>No meu tempo livre, gosto de jogar jogos eletrônicos e assistir partidas de futebol, 
+      o que me ajuda a relaxar e manter o equilíbrio no dia a dia.</p>
+
+      <p>Meu objetivo é crescer na área de tecnologia, adquirindo experiência e 
+      me tornando um profissional cada vez mais completo.</p>
+  </div>    
+  <div class="card"><strong>📍 Local:</strong> Araguaína - TO</div>
+  <div class="card"><strong>💻 Tecnologias:</strong> HTML, CSS, JavaScript,Python, Power Bi, SQL, Excel.</div>
+</section>
+
+<section id="formacao">
+  <h2>Formação</h2>
+
+  <div class="card">
+    <strong>2024 - Atual</strong>
+    <p>Ciência de Dados - UNINTER</p>
+  </div>
+
+  <div class="card">
+    <strong>2023</strong>
+    <p>Curso Power Bi e SQL</p>
+  </div>
+  <div class="card">
+    <strong>2022</strong>
+    <p>Curso Excel Especialista</p>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Portfólio</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Análise Exploratória de Dados - Titanic</h3>
+      <p>Projeto em Python</p>
+      <a href="https://github.com/EduardoMartinsMM/titanic-data-analysis">Clique no Link</a>
+      <img src="Imagens/pyhon.jpg" alt="imagem python">
+    </div>
+
+    <div class="card">
+      <h3>Indicadores Chaves (KPI) de Produção</h3>
+      <p>Projeto em Power BI</p>
+      <a href="https://github.com/EduardoMartinsMM/bi-industria-producao-estoque">Clique no Link</a>
+      <img src="Imagens/power bi.webp" alt="imagem power bi">
+    </div>
+
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+
+  <form onsubmit="enviarForm(event)">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+
+</html>

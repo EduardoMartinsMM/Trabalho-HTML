@@ -1,7 +1,8 @@
+/* Função para alternar tema claro/escuro*/
 function toggleTema() {
   document.body.classList.toggle("dark");
 }
-
+/* FUNÇÃO PARA VALIDAR FORMULÁRIO*/
 function enviarForm(e) {
   e.preventDefault();
 

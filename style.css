@@ -27,6 +27,7 @@ nav {
   background: #222;
   padding: 12px;
   text-align: center;
+  z-index: 1000;
 }
 
 nav a {

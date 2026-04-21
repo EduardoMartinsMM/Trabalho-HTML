@@ -14,6 +14,7 @@ function enviarForm(e) {
     alert("Preencha todos os campos!");
     return;
   }
-
+   // Limpa o formulário
+  e.target.reset();
   alert("Mensagem enviada!");
 }

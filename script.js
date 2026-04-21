@@ -14,7 +14,7 @@ function enviarForm(e) {
     alert("Preencha todos os campos!");
     return;
   }
-   // LIMPAR FORMULARIO
+   /* LIMPAR FORMULÁRIO*/
   e.target.reset();
   alert("Mensagem enviada!");
 }
